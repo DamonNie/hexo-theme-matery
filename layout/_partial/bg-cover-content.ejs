@@ -34,7 +34,9 @@
 <% if (theme.banner) { %>
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+    var randomMax = 7;
+    var randomNum = Math.floor(Math.random() * (randomMax - 1) + 1);
+    $('.bg-cover').css('background-image', 'url(/medias/banner/' + randomNum + '.jpg)');
 </script>
 <% } else { %>
 <script>
