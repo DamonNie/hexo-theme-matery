@@ -46,7 +46,7 @@ $(function () {
      * 修复样式.
      */
     let fixStyles = function () {
-        fixPostCardWidth('navContainer', 'articles');
+        fixPostCardWidth('navContainer');
         fixPostCardWidth('artDetail', 'prenext-posts');
         fixFooterPosition();
     };
@@ -142,7 +142,7 @@ $(function () {
     $(".nav-menu>li").hover(function(){
 	$(this).children('ul').stop(true,true).show();
 	$(this).addClass('nav-show').siblings('li').removeClass('nav-show');
-		
+
 	},function(){
 		$(this).children('ul').stop(true,true).hide();
 		$('.nav-item.nav-show').removeClass('nav-show');
